@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="all-articles">
+        {{#each articles}}
+        <ul>
+            <li class="title">{{title}}</li>
+            <li class="summary">{{summary}}</li>
+            <li class="link"><a href="{{link}}" target="_blank">Read the Article</a></li>
+            <button class="save-button" data-title="{{title}}" data-link="{{link}}" data-summary="{{summary}}"
+                data-id="{{id}}">
+                Save as Favorite
+            </button>
+        </ul>
+        {{/each}}
+    </div>
+</div>

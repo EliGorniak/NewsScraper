@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="saved-articles-div">
+        <div class="saved-articles">
+            {{#each this.articles}}
+            <ul>
+                <li class="title">{{title}}</li>
+                <li>{{summary}}</li>
+                <li><a href='{{link}}' target='_blank'>Read the Article</a></li>
+                <button class='delete-article-btn' data-title='{{title}}' data-link='{{link}}'
+                    data-summary='{{summary}}' data-id='{{id}}'>
+                    Delete from Favorites
+                </button>
+                <div class="comment-div">
+                    <p class="comment-header">Add Note</p>
+                    {{#articleComments}}
+                    <ul>
+                        <li>{{body}} <button data-id='{{id}}' class='delete-comment-btn'>X</button></li>
+                    </ul>
+                    {{/articleComments}}
+                </div>
+                <form action="api/comment/{{id}}" method="POST">
+                    <input type="text" class='comment-area' placeholder='Your comment here' name='comment'></input>
+                    <button type='submit' class='submit-comment' data-id='{{id}}' name='submit'>Save Note</button>
+                </form>
+            </ul>
+            {{/each}}
+        </div>
+    </div>
+</div>

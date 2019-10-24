@@ -1,0 +1,53 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  background: rgb(201, 201, 201);
+  text-align: center;
+}
+
+.header {
+  color: rgb(23, 2, 63);
+  padding: 25px;
+}
+
+.jumbotron {
+  background-image: url("../images/background.jpeg");
+  margin-top: 20px;
+  width: 100%;
+  background-size: cover;
+  color: antiquewhite;
+  height: 250px;
+}
+
+.main-title {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  line-height: 60px;
+  color: #c5c5e6;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  color: rgb(248, 209, 37);
+  text-shadow: 10px 10px 10px rgb(31, 30, 30);
+  font-size: 80px;
+}
+
+.save-button,
+.delete-article-btn,
+.delete-comment-btn,
+.submit-comment {
+  background: #683903;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px;
+  border: none;
+  box-shadow: 4px 3px 11px #000;
+  color: white;
+}
